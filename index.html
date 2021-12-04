@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock_Paper_Scissors</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/342de20db3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="mainMarPad th1">
+        <h1>ROCK - PAPER - SCISSORS</h1>
+    </header>
+    <main>
+        <!-- section to play the game and reload a new series -->
+        <section class="mainMarPad">
+            <h2>PLEASE PLAY</h2>
+            <div id="play">
+                <div id="reload">
+                    <div class="reload-item">
+                        <a href="#" id="btn-reload"><i class="fas fa-redo"></i></a>
+                    </div>
+                </div>
+                <div class="play-item">
+                    <a href="#" id="btn-rock"><i class="far 
+                    fa-hand-rock"></i></a>
+                </div>
+                <div class="play-item">
+                    <a href="#" id="btn-hand"><i class="far fa-hand-paper"></i></a>
+                </div>
+                <div class="play-item">
+                    <a href="#" id="btn-scissors"><i class="far fa-hand-scissors"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- section for information about the game or series-->
+        <section class="mainMarPad result-txt">
+            <h2>RESULT</h2>
+            <p id="output">
+                For a new game series please press the reload button
+            </p>
+        </section>
+        <!-- section for couting -->
+        <section id="counter" class="mainMarPad">
+            <h2>COUNTER</h2>
+            <div id="results">
+                <div id="results-user">
+                    <h3>USER</h3>
+                    <p id="cnt-user">0</p>
+                </div>
+                <div id="results-computer">
+                    <h3>COMPUTER</h3>
+                    <p id="cnt-comp">0</p>
+                </div>
+            </div>
+        </section>
+        <!-- section for config -->
+        <section id="config" class="mainMarPad">
+            <h2>CONFIG</h2>
+            <div id="config-radios">
+                <span>how many rounds?</span>
+                <label class="container">5
+                    <input type="radio" checked="checked" name="radio" id="radio1">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">10
+                    <input type="radio" name="radio" id="radio2">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">15
+                    <input type="radio" name="radio" id="radio3">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">20
+                    <input type="radio" name="radio" id="radio4">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </section>
+        <section class="mainMarPad">
+            <h2>Log</h2>
+            <p id="log">Log</p>
+        </section>
+    </main>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
