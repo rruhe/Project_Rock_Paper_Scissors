@@ -63,7 +63,7 @@ function theGame() {
     }
 
     function logInfo(infoToLog) {
-        dById("log").innerHTML += `<br>${new Date(Date.now())} ${infoToLog}`;
+        dById("log").innerHTML += `<br>${new Date().toLocaleString()} ${infoToLog}`;
     }
 
     function printInfo(arrWho, arrDec) {
@@ -80,8 +80,11 @@ function theGame() {
             logInfo(info); return;
         }
 
-        arrWho[0] === "c" ? info = `${t1} ${arrDec[0]} <-> ${t2} ${arrDec[1]}` :
-                            info = `${t3} ${arrDec[1]} <-> ${t4} ${arrDec[0]}` ;
+        if (arrWho[0] ==="c"){
+            info = `${t1} ${arrDec[0]} <-> ${t2} ${arrDec[1]}`
+        } else {
+            info = `${t3} ${arrDec[0]} <-> ${t4} ${arrDec[1]}`
+        }
         pOutput.innerHTML = info;
         logInfo(info);
     }
@@ -117,9 +120,8 @@ function theGame() {
                     cntUser.innerHTML = ++userCnt;
                     printInfo(["u", "c"], [rUVal, rCVal]);
                 }
-                pOutput.innerHTML = info;
             } else {
-                pOutput.innerHTML = `undecided same choice: ${rCVal}`;
+                printInfo(["x", ""], [rUVal, rCVal]);
             }
         }
 
@@ -132,7 +134,6 @@ function theGame() {
                     cntUser.innerHTML = ++userCnt;
                     printInfo(["u", "c"], [rUVal, rCVal]);
                 }
-                pOutput.innerHTML = info;
             } else {
                 printInfo(["x", ""], [rUVal, rCVal]);
             }
