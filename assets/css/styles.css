@@ -26,11 +26,6 @@ body {
    background-color: rgb(49, 48, 48);
 }
 
-a {
-   text-decoration: none;
-   color:rgb(209, 209, 209)
-}
-
 h1 {
    color: rgba(78,78,78,1);
    letter-spacing: 2px;
@@ -94,6 +89,7 @@ span {
    margin: 0vh auto;
    padding: 1vh 0vw;
    font-size: 5rem;
+   color:rgb(209, 209, 209)
 }
 
 .play-item {
