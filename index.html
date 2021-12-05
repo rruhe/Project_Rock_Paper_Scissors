@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header class="mainMarPad th1">
+    <header class="mainMarPad th1 border-style">
         <h1>ROCK - PAPER - SCISSORS</h1>
     </header>
     <main>
@@ -19,18 +19,16 @@
         <section class="mainMarPad">
             <h2>PLEASE PLAY</h2>
             <div id="play">
-                <div id="reload">
-                    <div class="reload-item" id="btn-reload">
-                        <i class="fas fa-redo"></i>
-                    </div>
+                <div class="reload-item" id="btn-reload">
+                    <i class="fas fa-redo"></i>
                 </div>
-                <div class="play-item" id="btn-rock">
+                <div class="play-item border-style" id="btn-rock">
                     <i class="far fa-hand-rock"></i>
                 </div>
-                <div class="play-item" id="btn-hand">
+                <div class="play-item border-style" id="btn-hand">
                     <i class="far fa-hand-paper"></i>
                 </div>
-                <div class="play-item" id="btn-scissors">
+                <div class="play-item border-style" id="btn-scissors">
                     <i class="far fa-hand-scissors"></i>
                 </div>
             </div>
@@ -38,14 +36,14 @@
         <!-- section for information about the game or series-->
         <section class="mainMarPad result-txt">
             <h2>RESULT</h2>
-            <p id="output">
+            <p id="output" class="border-style">
                 For a new game series please press the reload button
             </p>
         </section>
         <!-- section for couting -->
         <section id="counter" class="mainMarPad">
             <h2>COUNTER</h2>
-            <div id="results">
+            <div id="results" class="border-style">
                 <div id="results-user">
                     <h3>USER</h3>
                     <p id="cnt-user">0</p>
@@ -59,8 +57,8 @@
         <!-- section for config -->
         <section id="config" class="mainMarPad">
             <h2>CONFIG</h2>
-            <div id="config-radios">
-                <span>how many rounds?</span>
+            <div id="config-radios" class="border-style">
+                <span>How many rounds?</span>
                 <label class="container">5
                     <input type="radio" checked="checked" name="radio" id="radio1">
                     <span class="checkmark"></span>
@@ -80,8 +78,8 @@
             </div>
         </section>
         <section class="mainMarPad">
-            <h2>Log</h2>
-            <p id="log">Log</p>
+            <h2>LOG</h2>
+            <p id="log" class="border-style">Log</p>
         </section>
     </main>
     <script src="./assets/js/main.js"></script>
